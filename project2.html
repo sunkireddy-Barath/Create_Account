@@ -1,0 +1,81 @@
+<html>
+<body text=green>
+<center>
+<h1>
+Create Account
+</h1>
+</center>
+<hr size=5 color=grey>
+<form name=f1 action="C:\barath.s\HTML files\cr.html" method=post >
+<table  border=5 cellpadding=20 bordercolor=orange align=center style="border-collapse:collapse;">
+<tr>
+<td> Frist Name* <br>
+<input tyoe=textarea name=n1 size=40></td>
+<td>Last Name  <br>
+<input type=textarea name=n2 size=40></td>
+
+</tr>
+<tr>
+<td>Email* </td>
+<td> <input type=textarea name=e1 size=40> </td>
+</tr>
+<tr>
+<td>
+Password*  <br>
+<input type=password name=p1 size=40></td>
+<td> Confirm Password*  <br>
+<input type=password name=c1 size=40></td>
+</tr>
+
+<tr>
+<td> Gender*  <br>
+<input type=radio name=g1 value="Male"> Male 
+<input type=radio name=g1 value="Female"> Female </td>
+<td> Hobbies: <br>
+<input type=checkbox name=h1 > Musics
+<input type=checkbox name=h1 > Sports
+<input type=checkbox name=h1 > Reading Books
+<input type=checkbox name=h1 > Movies
+ </td>
+</tr>
+<tr>
+<td> Upload Profile Picture* <br> 
+<input type=file name=u1> </td>
+<td> Age: <br>
+<input type=textarea name=a1 size=40></td>
+</tr>
+<tr>
+<td> Bio: </td>
+<td> <textarea rows=5 cols=50 name=bb1> </textarea> </td>  
+</tr>
+
+<caption align=bottom>
+<h1>
+<input type=button name=b1 value="Click Me" onclick="create()">
+<input type=Reset name=r1 Value="Delete">
+<input type=submit name=c22 value="Create">
+</h1> </caption>
+</table>
+</form>
+</body>
+</html>
+
+<script language="javascript">
+function create()
+{
+var x
+x=f1.n1.value
+y=f1.n2.value
+z=f1.e1.value
+a=f1.c1.value
+b=f1.g1.value
+c=f1.bb1.value
+alert("Button Clicked")
+alert("First Name:"+x)
+alert("Last  Name:"+y)
+alert("Email:"+z)
+alert("Confirm Password:"+a)
+alert("Gender:"+b)
+alert("Bio:"+c)
+}
+</script>
